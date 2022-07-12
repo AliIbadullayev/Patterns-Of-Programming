@@ -1,0 +1,5 @@
+## Decorator
+
+### How I understand
+If we have some class and we need to make class which makes some extra method (something better than this class ~ decors the previous class), then it has two way how we can make this. Extend this class or use aggregation relationship. If we use first then we can change object only static (we need to create a new object which is the instance of new class to make a new feature in this class, also we cannot extend the changes of 2 classes), that's why we need to use decoration pattern, which says following: 
+> If we use class which implements a common interface and has in this class the instance of the previous class and override his method (super.<method_name>), then the new classes which extend this class will benefit the dynamic change of object + can change multiple classes.
